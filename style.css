@@ -26,3 +26,14 @@
 .transform-btn:hover {
     transform: scale(1.1);
 }
+
+.flip-gradient-btn {
+    background: linear-gradient(to right, #09c419, #ef82d0);
+    color: #fff;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.flip-gradient-btn:hover {
+    transform: rotateY(180deg);
+}
