@@ -1,4 +1,4 @@
-// JavaScript code to handle search functionality
+// 1910892
 document.getElementById('searchBtn').addEventListener('click', function() {
     let searchText = document.getElementById('searchInput').value.trim();
     if (searchText !== '') {
@@ -18,7 +18,7 @@ function searchMeal(keyword) {
 }
 function displayMeals(meals) {
     let mealRow = document.getElementById('mealRow');
-    mealRow.innerHTML = ''; // Clear previous results
+    mealRow.innerHTML = ''; 
     let showAllRow = document.getElementById('showAllRow');
     if (meals) {
         for (let i = 0; i < Math.min(meals.length, 3); i++) {
@@ -53,7 +53,7 @@ function displayMeals(meals) {
 
 function displayAllMeals(meals) {
     let mealRow = document.getElementById('mealRow');
-    mealRow.innerHTML = ''; // Clear previous results
+    mealRow.innerHTML = ''; 
     meals.forEach(meal => {
         mealRow.innerHTML += `
             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -70,7 +70,7 @@ function displayAllMeals(meals) {
     });
 }
 
-// Add event listener to toggle the 'collapsed' class on card text
+
 document.addEventListener('click', function(e) {
     if (e.target && e.target.classList.contains('btn-details')) {
         let cardText = e.target.previousElementSibling;
